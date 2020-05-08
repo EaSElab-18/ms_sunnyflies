@@ -1,0 +1,18 @@
+variable	type	description
+year	numeric	year
+month	numeric	month
+day	numeric	day
+time	numeric	time in 24hr format
+hour	numeric	nearest whole-hour
+date	date	"Julian date, d/m/y"
+date_posix	date	time & date in POSIX format
+lat	numeric	latitude of study site
+lon	numeric	longitude of study site
+daily_solarexp	numeric	"daily solar exposure, as recorded from the BOM station nearest the study site"
+daily_rainfall	numeric	"daily rainfall, as recorded from the BOM station nearest the study site"
+daily_maxtemp	numeric	"daily maximum temperature, as recorded from the BOM station nearest the study site"
+male_az	numeric	"the absolute compass orientation of a male display, in degrees"
+sun_al	numeric	the altitude of the sun at the time of a male display
+sun_az	numeric	the azimuth of the sun at the time of a male display
+offset	numeric	the absolute offset of the male display from the solar azimuth
+condition	character	"experimental condition (full sun, heavy cloud, artificially obscured sunlight)"

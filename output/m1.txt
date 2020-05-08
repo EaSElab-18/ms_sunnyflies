@@ -1,0 +1,43 @@
+Analysis of Deviance Table (Type II tests)
+
+Response: sqrt(offset)
+                   Chisq Df Pr(>Chisq)    
+condition        86.8627  2     <2e-16 ***
+sun_al            2.5359  1     0.1113    
+condition:sun_al  0.8151  2     0.6653    
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+Linear mixed-effects model fit by REML
+ Data: orient 
+       AIC      BIC    logLik
+  4375.418 4413.492 -2179.709
+
+Random effects:
+ Formula: ~1 | date
+        (Intercept) Residual
+StdDev:   0.3014747 2.940939
+
+Fixed effects: sqrt(offset) ~ condition * sun_al 
+                             Value Std.Error  DF   t-value p-value
+(Intercept)               8.389352 0.7707532 853 10.884615  0.0000
+conditionsun             -3.114547 1.1355022   9 -2.742881  0.0227
+conditionsunblock         0.424774 1.0142901   9  0.418789  0.6852
+sun_al                    0.011350 0.0159328 853  0.712355  0.4764
+conditionsun:sun_al       0.014298 0.0229180 853  0.623892  0.5329
+conditionsunblock:sun_al -0.003773 0.0197658 853 -0.190879  0.8487
+ Correlation: 
+                         (Intr) condtnsn cndtnsnb sun_al cndtnsn:s_
+conditionsun             -0.679                                    
+conditionsunblock        -0.760  0.516                             
+sun_al                   -0.940  0.638    0.715                    
+conditionsun:sun_al       0.654 -0.957   -0.497   -0.695           
+conditionsunblock:sun_al  0.758 -0.515   -0.926   -0.806  0.560    
+
+Standardized Within-Group Residuals:
+        Min          Q1         Med          Q3         Max 
+-3.12838418 -0.62247327  0.04676026  0.78565461  2.46577273 
+
+Number of Observations: 868
+Number of Groups: 12 
+  Response   family     link method  Marginal Conditional
+1   offset gaussian identity   none 0.1597799   0.1685173
